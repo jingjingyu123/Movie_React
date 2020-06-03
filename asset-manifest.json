@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Profile_React/static/css/main.e2020ef3.chunk.css",
+    "main.js": "/Profile_React/static/js/main.94cc0026.chunk.js",
+    "main.js.map": "/Profile_React/static/js/main.94cc0026.chunk.js.map",
+    "runtime-main.js": "/Profile_React/static/js/runtime-main.c7eaf8e7.js",
+    "runtime-main.js.map": "/Profile_React/static/js/runtime-main.c7eaf8e7.js.map",
+    "static/css/2.ccab356c.chunk.css": "/Profile_React/static/css/2.ccab356c.chunk.css",
+    "static/js/2.e621a7ba.chunk.js": "/Profile_React/static/js/2.e621a7ba.chunk.js",
+    "static/js/2.e621a7ba.chunk.js.map": "/Profile_React/static/js/2.e621a7ba.chunk.js.map",
+    "index.html": "/Profile_React/index.html",
+    "precache-manifest.d58e1dd03f7a9966c74ec0342a3491a2.js": "/Profile_React/precache-manifest.d58e1dd03f7a9966c74ec0342a3491a2.js",
+    "service-worker.js": "/Profile_React/service-worker.js",
+    "static/css/2.ccab356c.chunk.css.map": "/Profile_React/static/css/2.ccab356c.chunk.css.map",
+    "static/css/main.e2020ef3.chunk.css.map": "/Profile_React/static/css/main.e2020ef3.chunk.css.map",
+    "static/js/2.e621a7ba.chunk.js.LICENSE.txt": "/Profile_React/static/js/2.e621a7ba.chunk.js.LICENSE.txt",
+    "static/media/JJY1.jpeg": "/Profile_React/static/media/JJY1.6b1589e9.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c7eaf8e7.js",
+    "static/css/2.ccab356c.chunk.css",
+    "static/js/2.e621a7ba.chunk.js",
+    "static/css/main.e2020ef3.chunk.css",
+    "static/js/main.94cc0026.chunk.js"
+  ]
+}
