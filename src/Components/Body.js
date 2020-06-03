@@ -14,19 +14,13 @@ export class Body extends Component{
             return <Home/>
         }
         else if(activeTab==2){
-            return <Image/>
-        }
-        else if(activeTab==3){
-            return <Videos/>
-        }
-        else if(activeTab==4){
             return <Projects/>
         }
-        else if(activeTab==5){
+        else if(activeTab==3){
             return <Messages/>
         }
-        else{
-            return <Movies/>
+        else if(activeTab==4){
+            return  <Movies/>
         }
     }
   render(){

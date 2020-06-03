@@ -18,10 +18,8 @@ export class App extends Component{
         activeTab: id
       })
       if(id == 1) document.title='Home';
-      else if(id==2) document.title='Images';
-      else if(id==3) document.title='Videos';
-      else if(id==4) document.title='Projects';
-      else if(id==5) document.title='Messages';
+      else if(id==2) document.title='Create Lists';
+      else if(id==3) document.title='Add Movies';
       else document.title='Movies';
     }
     document.title='Home';
@@ -34,22 +32,14 @@ export class App extends Component{
       },
       {
         id:2,
-        title:'Images'
+        title:'Create Lists'
       },
       {
         id:3,
-        title:'Videos'
+        title:'Add Movies'
       },
       {
         id:4,
-        title:'Projects'
-      },
-      {
-        id:5,
-        title:'Messages'
-      },
-      {
-        id:6,
         title:'Movies'
       }
     ]

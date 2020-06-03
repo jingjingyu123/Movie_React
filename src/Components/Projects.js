@@ -1,50 +1,57 @@
 import React, { Component} from 'react';
-import image1 from './image/JJY7.jpg';
-import image2 from './image/JJY9.jpg';
-import image3 from './image/JJY8.jpg';
-import image4 from './image/JJY10.jpg';
+import globalVal from './Global/globalVar';
+import axios from 'axios'
+import useState from 'react';
+import config from './config.js';
+import Movies from './Movies';
+const firebase = require('firebase');
 
-console.log(image1);
 export class Projects extends Component{
-  render(){
-    return (
-    <div class="Project">
-        <div class="p">
-            <div class="i">
-                <a href="https://github.com/jingjingyu123/Profile"><img src={image1}/></a>
-            </div>
-            <div class="w">
-                <a>Personal Website:my website, created using html and css.</a>
-            </div>
-        </div>
-    <div class="p">
-        <div class="i">
-            <a href="https://github.com/jingjingyu123/"><img src={image2}/></a>
-        </div>
-        <div class="w">
-            <a>Tutor Schedule: help tutors make better schedules.</a>
-        </div>
-    </div>
+    constructor() {
+        super();
+        this.state = {
+          list:''
+        }
+        this.changeHandler = this.changeHandler.bind(this)
+        this.listSubmissionHandler = this.listSubmissionHandler.bind(this)
+        }
 
-    <div class="p">
-            <div class="i">
-            <a href="https://github.com/jingjingyu123/"><img src={image3}/></a>
-            </div>
-            <div class="w">
-                <a>WeTube:fun mobile app to watch videos together.</a>
-            </div>
+        changeHandler(e) {
+            this.setState({
+              [e.target.name]: e.target.value
+            });
+          }        
+  
+        listSubmissionHandler(e) {
+          e.preventDefault();
+          const listRef = firebase.database().ref('lists');
+          window.alert("successful");
+          listRef.push(this.state.list)
+        }
+   
+    render(){
+      if (!firebase.apps.length) {
+          firebase.initializeApp(config)
+      }
+         return ( 
+         <div className='Messages'>
+             <header>
+                 <div className='wrapper'>
+                     <h1>Create your List!</h1>
+                 </div>
+              </header>
+          <div className='container'>
+          <form onSubmit={this.listSubmissionHandler}>
+              <label>
+                <b>List Name</b>
+              </label>
+              <input onChange={this.changeHandler} value={this.state.list} type="text" name="list"/>
+              <button>Submit</button>
+            </form>
+          </div>
         </div>
-        <div class="p">
-            <div class="i">
-                <a href="https://github.com/jingjingyu123/"><img src={image4}/></a>
-            </div>
-            <div class="w">
-            <a>Floor sweeping robert:help you sweep the floor.</a>
-            </div>
-        </div>
-    </div>
-    );
-  }
+      );
+    }
 }
 
 export default Projects;
