@@ -15,6 +15,7 @@ export class Messages extends Component{
         Title: '',
         Poster: '',
         Rating: '',
+        Actors:'',
         List:'All',
         items: []
       }
@@ -46,6 +47,7 @@ export class Messages extends Component{
                   Director: responses[0].data.Director,
                   Rating: responses[0].data.imdbRating,
                   Plot: responses[0].data.Plot,
+                  Actors:responses[0].data.Actors,
                   List: this.state.List
                 }
                 console.log(thing)
