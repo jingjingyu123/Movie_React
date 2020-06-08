@@ -22,6 +22,9 @@ export class Body extends Component{
         else if(activeTab==4){
             return  <Movies/>
         }
+        else if(activeTab==5){
+            return  <Image/>
+        }
     }
   render(){
     return (this.displayContent());

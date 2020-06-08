@@ -20,7 +20,8 @@ export class App extends Component{
       if(id == 1) document.title='Home';
       else if(id==2) document.title='Create Lists';
       else if(id==3) document.title='Add Movies';
-      else document.title='Movies';
+      else if(id==4) document.title='Movies';
+      else document.title='Graph';
     }
     document.title='Home';
   }
@@ -41,6 +42,10 @@ export class App extends Component{
       {
         id:4,
         title:'Movies'
+      },
+      {
+        id:5,
+        title:'Graph'
       }
     ]
     return (
